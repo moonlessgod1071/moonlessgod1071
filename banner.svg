@@ -1,159 +1,149 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="920" height="220" role="img" aria-label="TMD-FRACTURE // 1071.trade">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070210"/>
-      <stop offset="50%" stop-color="#0e0520"/>
-      <stop offset="100%" stop-color="#05020a"/>
+      <stop offset="0%" stop-color="#030107"/>
+      <stop offset="52%" stop-color="#090314"/>
+      <stop offset="100%" stop-color="#020105"/>
     </linearGradient>
-    <radialGradient id="halo" cx="22%" cy="50%" r="48%">
-      <stop offset="0%" stop-color="#8b2be2" stop-opacity="0.32"/>
-      <stop offset="55%" stop-color="#ff2bd6" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#05020a" stop-opacity="0"/>
+    <radialGradient id="halo" cx="18%" cy="52%" r="42%">
+      <stop offset="0%" stop-color="#8b2be2" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#ff2bd6" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#030107" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="haloRight" cx="84%" cy="50%" r="36%">
-      <stop offset="0%" stop-color="#ff2bd6" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="#05020a" stop-opacity="0"/>
+    <radialGradient id="haloRight" cx="84%" cy="52%" r="32%">
+      <stop offset="0%" stop-color="#ff2bd6" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#030107" stop-opacity="0"/>
     </radialGradient>
+    <!-- Deep mysterious shadow vignette & veil -->
+    <radialGradient id="vignette" cx="46%" cy="50%" r="64%">
+      <stop offset="35%" stop-color="#020105" stop-opacity="0"/>
+      <stop offset="78%" stop-color="#020105" stop-opacity="0.58"/>
+      <stop offset="100%" stop-color="#010003" stop-opacity="0.88"/>
+    </radialGradient>
+    <linearGradient id="shadowSlash" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#010003" stop-opacity="0.55"/>
+      <stop offset="42%" stop-color="#05020a" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#010003" stop-opacity="0.62"/>
+    </linearGradient>
     <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="1" fill="#b44cff" fill-opacity="0.08"/>
+      <rect width="4" height="1" fill="#8b2be2" fill-opacity="0.05"/>
     </pattern>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#8b2be2" stroke-opacity="0.09" stroke-width="1"/>
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#8b2be2" stroke-opacity="0.055" stroke-width="1"/>
     </pattern>
     <filter id="glowMag" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <filter id="glowSoft" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feGaussianBlur stdDeviation="1.8" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="deepShadow" x="-15%" y="-15%" width="135%" height="145%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.88"/>
     </filter>
   </defs>
 
-  <!-- Base Vault Surface -->
+  <!-- Base Obsidian Vault Surface -->
   <rect width="920" height="220" rx="4" fill="url(#bg)"/>
   <rect width="920" height="220" rx="4" fill="url(#grid)"/>
   <rect width="920" height="220" rx="4" fill="url(#halo)"/>
   <rect width="920" height="220" rx="4" fill="url(#haloRight)"/>
   <rect width="920" height="220" rx="4" fill="url(#scan)"/>
 
-  <!-- Subtle Neural Cobweb & Magenta Fiber Filaments -->
-  <g stroke="#b44cff" stroke-opacity="0.22" stroke-width="1" fill="none">
+  <!-- Faint Neural Cobweb Lurking in Shadow -->
+  <g stroke="#8b2be2" stroke-opacity="0.14" stroke-width="1" fill="none">
     <path d="M 18 42 L 74 22 L 122 56 L 62 96 Z"/>
     <path d="M 74 22 L 154 18 L 122 56"/>
     <path d="M 735 28 L 796 52 L 864 26 L 896 84 L 826 104 Z"/>
     <path d="M 796 52 L 826 104 L 748 164"/>
   </g>
-  <g fill="#c77dff" fill-opacity="0.55">
-    <circle cx="74" cy="22" r="2"/>
-    <circle cx="122" cy="56" r="2.2"/>
-    <circle cx="154" cy="18" r="1.6"/>
-    <circle cx="796" cy="52" r="2.2"/>
-    <circle cx="864" cy="26" r="1.8"/>
-    <circle cx="826" cy="104" r="2"/>
+  <g fill="#b44cff" fill-opacity="0.34">
+    <circle cx="74" cy="22" r="1.8"/>
+    <circle cx="122" cy="56" r="2"/>
+    <circle cx="154" cy="18" r="1.4"/>
+    <circle cx="796" cy="52" r="2"/>
+    <circle cx="864" cy="26" r="1.5"/>
+    <circle cx="826" cy="104" r="1.8"/>
   </g>
-  <!-- Glowing Magenta Neural Cables from Crest to Right CTA -->
-  <path d="M 192 94 C 248 94, 248 76, 294 76" fill="none" stroke="#ff2bd6" stroke-width="1.5" stroke-opacity="0.72" filter="url(#glowSoft)"/>
-  <path d="M 192 126 C 248 126, 248 148, 294 148" fill="none" stroke="#b44cff" stroke-width="1.2" stroke-opacity="0.55"/>
-  <path d="M 642 110 C 676 110, 682 110, 706 110" fill="none" stroke="#ff2bd6" stroke-width="1.5" stroke-opacity="0.78" filter="url(#glowSoft)"/>
-  <circle cx="242" cy="84" r="2" fill="#f0e9fa"/>
-  <circle cx="674" cy="110" r="2" fill="#f0e9fa"/>
 
-  <!-- Outer Vault Border + Sharp HUD Corner Brackets -->
-  <rect x="8" y="8" width="904" height="204" rx="2" fill="none" stroke="#c77dff" stroke-opacity="0.32" stroke-width="1"/>
-  <path d="M 8 24 L 8 8 L 24 8" fill="none" stroke="#ff2bd6" stroke-width="2"/>
-  <path d="M 896 8 L 912 8 L 912 24" fill="none" stroke="#c77dff" stroke-width="2"/>
-  <path d="M 8 196 L 8 212 L 24 212" fill="none" stroke="#c77dff" stroke-width="2"/>
-  <path d="M 896 212 L 912 212 L 912 196" fill="none" stroke="#ff2bd6" stroke-width="2"/>
+  <!-- Dimmed Neural Cables from Crest to Title & CTA -->
+  <path d="M 192 98 C 244 98, 246 88, 294 88" fill="none" stroke="#ff2bd6" stroke-width="1.3" stroke-opacity="0.48" filter="url(#glowSoft)"/>
+  <path d="M 192 126 C 244 126, 246 138, 294 138" fill="none" stroke="#8b2be2" stroke-width="1.1" stroke-opacity="0.38"/>
+  <path d="M 642 110 C 674 110, 682 110, 706 110" fill="none" stroke="#ff2bd6" stroke-width="1.3" stroke-opacity="0.52" filter="url(#glowSoft)"/>
+  <circle cx="242" cy="92" r="1.7" fill="#d7d0ea" fill-opacity="0.72"/>
+  <circle cx="674" cy="110" r="1.7" fill="#d7d0ea" fill-opacity="0.72"/>
 
-  <!-- Top Telemetry Header Strip -->
-  <circle cx="30" cy="28" r="3.2" fill="#2ef28b" filter="url(#glowSoft)"/>
-  <text x="42" y="32" fill="#9a88b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="2.2">VAULT ONLINE // SIGNAL 10:71</text>
-  <text x="892" y="32" text-anchor="end" fill="#9a88b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="2">MOONLESSGOD1071</text>
+  <!-- Top Telemetry Whisper (Left Only) -->
+  <circle cx="30" cy="28" r="2.6" fill="#2ef28b" fill-opacity="0.82" filter="url(#glowSoft)"/>
+  <text x="42" y="31.5" fill="#6f5d8f" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2.2">VAULT ONLINE // SIGNAL 10:71</text>
 
-  <!-- 1071 BRAIN SHIELD CREST (Left Center) -->
-  <g transform="translate(64, 46)">
-    <!-- Shield Outer Frame -->
-    <path d="M 10 8 L 112 8 L 118 14 L 118 92 L 61 128 L 4 92 L 4 14 Z" fill="#090314" stroke="#c77dff" stroke-width="2"/>
-    <path d="M 14 13 L 108 13 L 113 18 L 113 89 L 61 122 L 9 89 L 9 18 Z" fill="none" stroke="#8b2be2" stroke-opacity="0.55" stroke-width="1"/>
-    <!-- Emerald LED above shield -->
-    <rect x="57" y="1" width="8" height="4" rx="1" fill="#2ef28b" filter="url(#glowSoft)"/>
+  <!-- 1071 BRAIN SHIELD CREST (Left Center, Emerging from Shadow) -->
+  <g transform="translate(64, 46)" filter="url(#deepShadow)">
+    <path d="M 10 8 L 112 8 L 118 14 L 118 92 L 61 128 L 4 92 L 4 14 Z" fill="#06020e" stroke="#9e62db" stroke-opacity="0.82" stroke-width="1.8"/>
+    <path d="M 14 13 L 108 13 L 113 18 L 113 89 L 61 122 L 9 89 L 9 18 Z" fill="none" stroke="#8b2be2" stroke-opacity="0.38" stroke-width="1"/>
+    <rect x="57" y="1" width="8" height="3.5" rx="1" fill="#2ef28b" fill-opacity="0.85" filter="url(#glowSoft)"/>
 
-    <!-- Crisp Pixel-Art 1071 Brain (scale 4x from 14x13 grid) -->
+    <!-- Crisp Pixel-Art 1071 Brain -->
     <g transform="translate(33, 22) scale(4)" shape-rendering="crispEdges">
-      <!-- Crown highlights -->
-      <rect x="3" y="0" width="3" height="1" fill="#f5efff"/>
-      <rect x="8" y="0" width="3" height="1" fill="#f5efff"/>
-      <!-- Upper lobes -->
-      <rect x="2" y="1" width="4" height="2" fill="#e879f9"/>
-      <rect x="8" y="1" width="4" height="2" fill="#e879f9"/>
-      <rect x="6" y="1" width="2" height="1" fill="#3b0f6b"/>
-      <!-- Mid lobes -->
-      <rect x="1" y="3" width="5" height="4" fill="#c026d3"/>
-      <rect x="8" y="3" width="5" height="4" fill="#c026d3"/>
-      <rect x="6" y="2" width="2" height="7" fill="#250845"/>
-      <!-- Gyri highlights -->
-      <rect x="2" y="3" width="2" height="1" fill="#fae8ff"/>
-      <rect x="10" y="3" width="2" height="1" fill="#fae8ff"/>
+      <rect x="3" y="0" width="3" height="1" fill="#ede6f8"/>
+      <rect x="8" y="0" width="3" height="1" fill="#ede6f8"/>
+      <rect x="2" y="1" width="4" height="2" fill="#d966f0"/>
+      <rect x="8" y="1" width="4" height="2" fill="#d966f0"/>
+      <rect x="6" y="1" width="2" height="1" fill="#2f0b56"/>
+      <rect x="1" y="3" width="5" height="4" fill="#a820bd"/>
+      <rect x="8" y="3" width="5" height="4" fill="#a820bd"/>
+      <rect x="6" y="2" width="2" height="7" fill="#1e0638"/>
+      <rect x="2" y="3" width="2" height="1" fill="#f3d8ff"/>
+      <rect x="10" y="3" width="2" height="1" fill="#f3d8ff"/>
       <rect x="3" y="5" width="2" height="1" fill="#ff2bd6"/>
       <rect x="9" y="5" width="2" height="1" fill="#ff2bd6"/>
-      <!-- Sulci shadows -->
-      <rect x="2" y="4" width="1" height="1" fill="#4c117a"/>
-      <rect x="11" y="4" width="1" height="1" fill="#4c117a"/>
-      <rect x="4" y="6" width="1" height="1" fill="#4c117a"/>
-      <rect x="9" y="6" width="1" height="1" fill="#4c117a"/>
-      <!-- Lower lobes -->
-      <rect x="2" y="7" width="4" height="2" fill="#9333ea"/>
-      <rect x="8" y="7" width="4" height="2" fill="#9333ea"/>
-      <rect x="3" y="8" width="2" height="1" fill="#d946ef"/>
-      <rect x="9" y="8" width="2" height="1" fill="#d946ef"/>
-      <!-- Brainstem + tendrils -->
-      <rect x="5" y="9" width="4" height="2" fill="#7e22ce"/>
-      <rect x="6" y="10" width="2" height="2" fill="#b44cff"/>
-      <rect x="2" y="10" width="2" height="2" fill="#6b21a8"/>
-      <rect x="10" y="10" width="2" height="2" fill="#6b21a8"/>
+      <rect x="2" y="4" width="1" height="1" fill="#3e0d66"/>
+      <rect x="11" y="4" width="1" height="1" fill="#3e0d66"/>
+      <rect x="4" y="6" width="1" height="1" fill="#3e0d66"/>
+      <rect x="9" y="6" width="1" height="1" fill="#3e0d66"/>
+      <rect x="2" y="7" width="4" height="2" fill="#7e22ce"/>
+      <rect x="8" y="7" width="4" height="2" fill="#7e22ce"/>
+      <rect x="3" y="8" width="2" height="1" fill="#c03ae0"/>
+      <rect x="9" y="8" width="2" height="1" fill="#c03ae0"/>
+      <rect x="5" y="9" width="4" height="2" fill="#6b1cb0"/>
+      <rect x="6" y="10" width="2" height="2" fill="#9d42e8"/>
+      <rect x="2" y="10" width="2" height="2" fill="#521687"/>
+      <rect x="10" y="10" width="2" height="2" fill="#521687"/>
     </g>
 
-    <!-- Split 10 / 71 Numeral inside Shield Base -->
     <text x="61" y="104" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22" font-weight="800" letter-spacing="2">
-      <tspan fill="#ff2bd6" filter="url(#glowMag)">10</tspan><tspan fill="#efe4ff">71</tspan>
+      <tspan fill="#ff2bd6" filter="url(#glowMag)">10</tspan><tspan fill="#e5daf5">71</tspan>
     </text>
   </g>
 
-  <!-- Center Vault Title Block -->
-  <g transform="translate(298, 60)">
-    <text x="0" y="24" fill="#f5efff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="30" font-weight="800" letter-spacing="4.5">TMD-FRACTURE</text>
-    <text x="0" y="56" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22" font-weight="700" letter-spacing="2">
-      <tspan fill="#ff2bd6" filter="url(#glowMag)">10</tspan><tspan fill="#efe4ff">71</tspan><tspan fill="#c77dff">.trade</tspan>
+  <!-- Center Vault Title Block (Vertically Centered, Clean & Enigmatic) -->
+  <g transform="translate(298, 76)" filter="url(#deepShadow)">
+    <text x="0" y="24" fill="#ede6f8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="30" font-weight="800" letter-spacing="5">TMD-FRACTURE</text>
+    <text x="0" y="56" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="21" font-weight="700" letter-spacing="2.2">
+      <tspan fill="#ff2bd6" filter="url(#glowMag)">10</tspan><tspan fill="#e5daf5">71</tspan><tspan fill="#a86ee0">.trade</tspan>
     </text>
-    <text x="0" y="84" fill="#a896c8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" letter-spacing="1.6">TOTAL MARKET DOMINANCE · LIVING ARCHIVE</text>
-
-    <!-- 4 Gate Chips -->
-    <g transform="translate(0, 98)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" letter-spacing="1.5" fill="#c77dff">
-      <rect x="0" y="0" width="60" height="20" rx="2" fill="#120726" stroke="#8b2be2" stroke-opacity="0.55"/>
-      <text x="30" y="13.5" text-anchor="middle">CODEX</text>
-
-      <rect x="68" y="0" width="74" height="20" rx="2" fill="#120726" stroke="#8b2be2" stroke-opacity="0.55"/>
-      <text x="105" y="13.5" text-anchor="middle">LITURGY</text>
-
-      <rect x="150" y="0" width="118" height="20" rx="2" fill="#120726" stroke="#ff2bd6" stroke-opacity="0.6"/>
-      <text x="209" y="13.5" text-anchor="middle" fill="#f5efff">HOMUNCLOPEDIA</text>
-
-      <rect x="276" y="0" width="66" height="20" rx="2" fill="#120726" stroke="#8b2be2" stroke-opacity="0.55"/>
-      <text x="309" y="13.5" text-anchor="middle">RELICS</text>
-    </g>
+    <text x="0" y="83" fill="#7f6d9e" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="2">TOTAL MARKET DOMINANCE · LIVING ARCHIVE</text>
   </g>
 
-  <!-- Right Primary CTA Terminal Box -->
-  <g transform="translate(708, 82)">
-    <rect x="0" y="0" width="176" height="56" rx="2" fill="#090315" stroke="#ff2bd6" stroke-opacity="0.72" stroke-width="1.3"/>
-    <path d="M 0 10 L 0 0 L 10 0" fill="none" stroke="#ff2bd6" stroke-width="2"/>
-    <path d="M 166 56 L 176 56 L 176 46" fill="none" stroke="#c77dff" stroke-width="2"/>
-    <!-- Left glowing socket -->
-    <rect x="-5" y="21" width="9" height="14" fill="#180930" stroke="#c77dff" stroke-width="1"/>
-    <rect x="-3" y="24" width="5" height="8" fill="#ff2bd6"/>
-
-    <text x="18" y="22" fill="#9a88b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" letter-spacing="1.8">OFFICIAL SITE</text>
-    <text x="18" y="42" fill="#f5efff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15.5" font-weight="800" letter-spacing="1.4">▶ 1071.TRADE</text>
+  <!-- Right Minimal Shadow CTA Box (No "OFFICIAL SITE" label) -->
+  <g transform="translate(708, 86)" filter="url(#deepShadow)">
+    <rect x="0" y="0" width="176" height="48" rx="2" fill="#06020e" stroke="#ff2bd6" stroke-opacity="0.52" stroke-width="1.2"/>
+    <path d="M 0 9 L 0 0 L 9 0" fill="none" stroke="#ff2bd6" stroke-opacity="0.85" stroke-width="1.8"/>
+    <path d="M 167 48 L 176 48 L 176 39" fill="none" stroke="#b44cff" stroke-opacity="0.85" stroke-width="1.8"/>
+    <rect x="-5" y="17" width="9" height="14" fill="#110624" stroke="#9e62db" stroke-opacity="0.7" stroke-width="1"/>
+    <rect x="-3" y="20" width="5" height="8" fill="#ff2bd6" fill-opacity="0.85"/>
+    <text x="88" y="29.5" text-anchor="middle" fill="#ede6f8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" font-weight="800" letter-spacing="1.8">▶ 1071.TRADE</text>
   </g>
+
+  <!-- Mysterious Shadow Vignette & Atmospheric Veil Over Everything -->
+  <rect width="920" height="220" rx="4" fill="url(#shadowSlash)" pointer-events="none"/>
+  <rect width="920" height="220" rx="4" fill="url(#vignette)" pointer-events="none"/>
+
+  <!-- Subtle Outer Vault Frame + Muted Corner Brackets -->
+  <rect x="8" y="8" width="904" height="204" rx="2" fill="none" stroke="#8b2be2" stroke-opacity="0.24" stroke-width="1"/>
+  <path d="M 8 24 L 8 8 L 24 8" fill="none" stroke="#ff2bd6" stroke-opacity="0.65" stroke-width="1.8"/>
+  <path d="M 896 8 L 912 8 L 912 24" fill="none" stroke="#b44cff" stroke-opacity="0.55" stroke-width="1.8"/>
+  <path d="M 8 196 L 8 212 L 24 212" fill="none" stroke="#b44cff" stroke-opacity="0.55" stroke-width="1.8"/>
+  <path d="M 896 212 L 912 212 L 912 196" fill="none" stroke="#ff2bd6" stroke-opacity="0.65" stroke-width="1.8"/>
 </svg>
